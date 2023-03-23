@@ -14,6 +14,7 @@
 -   run composer install
 - run npm install
 -   run migrate:fresh --seed
+- run storage:link
 -   run php artisan serve
 -   run npm run dev
 
