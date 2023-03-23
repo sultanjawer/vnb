@@ -46,14 +46,14 @@
 				<a href="#" title="Produk-produk" data-filter-tags="produk">
 					<i class="fal fa-shopping-cart"></i>
 					<span class="nav-link-text"
-						data-i18n="nav.products">Produk-produk</span>
+						data-i18n="nav.products">Products</span>
 				</a>
 				<ul>
 					<li class="c-sidebar-nav-item {{ request()->is('products') ? 'active' : '' }}">
 						<a href="{{ route('products.index') }}" class="c-sidebar-nav-link"
 							data-filter-tags="produk product">
 							<i
-								class="fa-fw fal fa-cubes c-sidebar-nav-icon"></i>Produk Index
+								class="fa-fw fal fa-cubes c-sidebar-nav-icon"></i>Product Catalog
 						</a>
 					</li>
 					<li class="c-sidebar-nav-item {{ request()->is('products/create') ? 'active' : '' }}">
