@@ -9,10 +9,16 @@
 					Daerah Khusus Ibukota Jakarta 11730, Indonesia<br>
 				</p>
 				<p class="text-decoration-none">
-					E: <a href="mailto:viralniagaberjaya@gmail.com"
-						class="text-decoration-none text-red-600">viralniagaberjaya@gmail.com</a><br>
-					P: <a href="https://wa.me/6281284331989?text=I'm%20interested%20in%20your%20products"
-						class="text-decoration-none text-red-600">+6281284331989</a><br>
+					<i class="far fa-envelope mr-1"></i>
+					<a href="mailto:viralniagaberjaya@gmail.com" class="text-decoration-none text-red-600">
+						viralniagaberjaya@gmail.com
+					</a><br>
+
+					<i class="fab fa-whatsapp tex-success mr-1"></i>
+					<a href="https://wa.me/6281284331989?text=I'm%20interested%20in%20your%20products"
+						class="text-decoration-none text-red-600">
+						+6281284331989
+					</a><br>
 				</p>
 			</div>
 		</div>

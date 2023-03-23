@@ -20,7 +20,7 @@ class ProductsController extends Controller
 		$heading_class = 'fal fa-newspaper';
 		$page_title = 'Product List';
 		$page_desc = 'Short description for this page'; //
-		$defaultimg = url('storage/img/post_img/default.jpg');
+		$defaultimg = url('storage/img/image/default-100.jpg');
 		$products = Product::all();
 
 		return view('admin.products.index', compact('page_modul', 'heading_class', 'page_title', 'page_desc', 'products', 'defaultimg'));
@@ -84,7 +84,7 @@ class ProductsController extends Controller
 		$heading_class = 'fal fa-edit';
 		$page_title = 'Edit Product';
 		$page_desc = 'Short description for this page'; //
-		$defaultimg = url('storage/img/post_img/default.jpg');
+		$defaultimg = url('storage/img/images/default-100.jpg');
 		$product = Product::findOrFail($id);
 
 		return view('admin.products.edit', compact('page_modul', 'heading_class', 'page_title', 'page_desc', 'product', 'defaultimg'));

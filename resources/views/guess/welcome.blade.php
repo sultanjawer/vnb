@@ -12,8 +12,26 @@
 		<link rel="stylesheet" href="{{ asset('guess/css/app.min.css') }}">
 		<link rel="stylesheet" href="{{ asset('guess/css/vendor.min.css') }}">
 
-        <link href="{{ asset('css/fontawesome.min.css') }}" rel="stylesheet">
+		<link rel="stylesheet" media="screen, print" href="{{ asset('css/font/fa-light.css') }}">
+		<link rel="stylesheet" media="screen, print" href="{{ asset('css/font/fa-regular.css') }}">
+		<link rel="stylesheet" media="screen, print" href="{{ asset('css/font/fa-solid.css') }}">
+		<link rel="stylesheet" media="screen, print" href="{{ asset('css/font/fa-brands.css') }}">
+		<style>
+			.row-eq-height {
+  display: flex;
+  flex-wrap: wrap;
+}
 
+.row-eq-height > [class*='col-'] {
+  display: flex;
+  flex-direction: column;
+}
+
+.row-eq-height > [class*='col-'] > .container {
+  flex: 1;
+}
+
+		</style>
 	</head>
 	<body class="pace-done ">
 		<div class="pace pace-inactive">
@@ -36,7 +54,8 @@
 						<div class="carousel-item {{ $loop->first ? 'active' : '' }}">
 							<div class="section section-hero">
 								<div class="section-bg with-cover"
-									style="background: url('{{ asset('storage/img/post_img/' . $post->mime) }}') center 0px / cover no-repeat;">
+								style="background: url('{{ $post->mime ? asset('storage/img/post_img/' . $post->mime) : asset('storage/img/images/default-100.jpg') }}') center 0px / cover no-repeat;">
+
 								</div>
 								<div class="section-bg bg-gray-800 bg-opacity-50"></div>
 								<div class="container position-relative">
@@ -79,10 +98,10 @@
 							Best in Quality and Price
 						</p>
 					</div>
-					<div class="row gx-5 mb-5">
+					<div class="row gx-5 mb-5 row-eq-height">
 						@foreach ($products as $product)
 							<div class="col-md-4 mb-3" >
-								<div class="container rounded-3 shadow-lg position-relative" style="background: url('{{ $product->product_mime ? asset('storage/img/product_img/' . $product->product_mime) : asset('storage/img/post_img/default.jpg') }}') center 0px / cover no-repeat;">
+								<div class="container rounded-3 shadow-lg position-relative" style="background: url('{{ $product->product_mime ? asset('storage/img/product_img/' . $product->product_mime) : asset('storage/img/images/default-100.jpg') }}') center 0px / cover no-repeat;">
 									<div class="section-hero-content">
 										<div class="row">
 											<div class="col m-2">
@@ -143,7 +162,7 @@
 											</div>
 											<div class="news-media w-50 h-100 mb-0">
 												<div class="news-media-img h-100 pt-0"
-												style="background: url('{{ $product->product_mime ? asset('storage/img/product_img/' . $product->product_mime) : asset('storage/img/post_img/default.jpg') }}') center 0px / cover no-repeat;">
+												style="background: url('{{ $product->product_mime ? asset('storage/img/product_img/' . $product->product_mime) : asset('storage/img/images/default-100.jpg') }}') center 0px / cover no-repeat;">
 												</div>
 											</div>
 										</div>
@@ -162,7 +181,7 @@
 								<div class="news rounded-3 overflow-hidden mb-5 mb-lg-0 d-flex flex-column">
 									<div class="news-media mb-0">
 										<div class="news-media-img"
-											style="background: url('{{ $product->product_mime ? asset('storage/img/product_img/' . $product->product_mime) : asset('storage/img/post_img/default.jpg') }}')
+											style="background: url('{{ $product->product_mime ? asset('storage/img/product_img/' . $product->product_mime) : asset('storage/img/images/default-100.jpg') }}')
 												center 0px / cover no-repeat;">
 										</div>
 									</div>

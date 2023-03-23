@@ -89,7 +89,7 @@ class PostsController extends Controller
 		$page_desc = 'Short description for this page'; //
 		$categories = Category::all();
 		$post = Post::findOrFail($id);
-		$defaultimg = url('storage/img/post_img/default.jpg');
+		$defaultimg = url('storage/img/images/default-100.jpg');
 
 		return view('admin.posts.edit', compact('page_modul', 'heading_class', 'page_title', 'page_desc', 'post', 'defaultimg', 'categories'));
 	}

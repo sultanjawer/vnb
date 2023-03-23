@@ -12,10 +12,10 @@
 		<link rel="stylesheet" href="{{ asset('guess/css/app.min.css') }}">
 		<link rel="stylesheet" href="{{ asset('guess/css/vendor.min.css') }}">
 
-		<link rel="stylesheet" media="screen, print" href="{{ asset('css/font/fa-light.css') }}">
-        <link rel="stylesheet" media="screen, print" href="{{ asset('css/font/fa-regular.css') }}">
-        <link rel="stylesheet" media="screen, print" href="{{ asset('css/font/fa-solid.css') }}">
-        <link rel="stylesheet" media="screen, print" href="{{ asset('css/font/fa-brands.css') }}">
+		<link rel="stylesheet" media="screen, print" href="{{ asset('css/smartadmin/fa-light.css') }}">
+		<link rel="stylesheet" media="screen, print" href="{{ asset('css/smartadmin/fa-regular.css') }}">
+		<link rel="stylesheet" media="screen, print" href="{{ asset('css/smartadmin/fa-solid.css') }}">
+		<link rel="stylesheet" media="screen, print" href="{{ asset('css/smartadmin/fa-brands.css') }}">
 
 	</head>
 	<body class="pace-done ">
@@ -34,56 +34,46 @@
 			@include('partials.corporate.headernav')
 			<!-- hero section-->
 			<div class="section py-5">
-				<div class="section-bg" style="background-image: url('{{ asset('storage/img/images/img-27.jpg') }}');"></div>
+				<div class="section-bg" style="background-image: url('{{ asset('storage/img/images/Asset-1-80.jpg') }}');"></div>
 				<div class="section-bg bg-gray-800 opacity-50"></div>
 				<div class="container position-relative text-white text-center">
-					<div class="display-6 fw-bolder">Contact Us</div>
+					<div class="display-6 fw-bolder">About Us</div>
 				</div>
 			</div>
 			<div class="section py-5">
 				<div class="container">
 					<div class="row justify-content-center">
-						<div class="col-lg-10">
+						<div class="col-lg-12">
 							<div class="row gx-5 mb-5">
 								<div class="col-lg-6 mb-5 mb-lg-0">
+									<h5 class="mb-3">About Us</h5>
+									<p>
+										PT. Viral Niaga Berjaya berdiri sejak tahun 2022,
+										merupakan perusahaan importir dan distributor untuk
+										peralatan pabrik kaca % aplikator kaca. kami juga menyediakan
+										jasa trading. Jika Anda ingin mengetahui lebih lanjut
+										tentang bagaimana PT. Viral Niaga Berjaya dapat melayani
+										kebutuhan peralatan dan industri Anda, hubungi hari ini.
+									</p>
+								</div>
+								<div class="col-lg-6">
+									<h5 class="mb-3">Contact Us</h5>
 									<div><b>PT. Viral Niaga Berjaya</b></div>
 									<p class="text-wrap">
 										Jl. Ruko Pelangi No.25, RT.7/RW.8<br>
 										Cengkareng Barat, Kecamatan Cengkareng, Kota Jakarta Barat, Daerah Khusus Ibukota Jakarta 11730, Indonesia<br>
 									</p>
 									<p class="text-decoration-none">
-										E: <a href="mailto:viralniagaberjaya@gmail.com" class="text-decoration-none text-red-600">viralniagaberjaya@gmail.com</a><br>
-										P: <a href="https://wa.me/6281284331989?text=I'm%20interested%20in%20your%20products" class="text-decoration-none text-red-600">+6281284331989</a><br>
+										<i class="far fa-envelope mr-1"></i>
+										<a href="mailto:viralniagaberjaya@gmail.com" class="text-decoration-none text-red-600">
+											viralniagaberjaya@gmail.com
+										</a><br>
+										<i class="fab fa-whatsapp tex-success mr-1"></i>
+										<a href="https://wa.me/6281284331989?text=I'm%20interested%20in%20your%20products"
+											class="text-decoration-none text-red-600">
+											+6281284331989
+										</a><br>
 									</p>
-								</div>
-								<div class="col-lg-6">
-									<h4>Contact Form</h4>
-									<p>
-										If you have any questions, please do not hesitate
-										get in touch with us via the methods below:
-									</p>
-									<form action="" method="POST" name="contact_form">
-										<div class="row gx-2">
-											<div class="col-lg-6 mb-2">
-												<input type="text" class="form-control form-control-lg rounded-2"
-													placeholder="Name *" name="name">
-											</div>
-											<div class="col-lg-6 mb-2">
-												<input type="text" class="form-control form-control-lg rounded-2"
-													placeholder="Email *" name="email">
-											</div>
-										</div>
-										<div class="mb-2">
-											<input type="text" class="form-control form-control-lg rounded-2"
-												placeholder="Subject *" name="subject">
-										</div>
-										<div class="mb-20px pb-4px">
-											<textarea class="form-control" rows="5" name="message" placeholder="Messages *"></textarea>
-										</div>
-										<button class="btn btn-lg d-block w-100 btn-outline-success rounded-2 fw-bold fs-16px py-3">
-											Send us an Email
-										</button>
-									</form>
 								</div>
 							</div>
 							<h5 class="mb-3">Visit Us</h5>

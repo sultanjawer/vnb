@@ -22,12 +22,12 @@
 						Who We Are
 					</a>
 				</div>
-				<div class="header-nav-item">
+				{{-- <div class="header-nav-item">
 					<a href="{{route('contact')}}" class="header-nav-link
 						{{ request()->is('contact') ? 'btn btn-primary active text-white' : '' }}">
 						Contact Us
 					</a>
-				</div>
+				</div> --}}
 				{{-- <div class="header-nav-item">
 					<a href="{{ route('newsroom.index') }}" class="header-nav-link nav-link
 						{{ Request::is('newsroom*', 'newsroom') ? 'btn btn-primary active text-white' : '' }}">
