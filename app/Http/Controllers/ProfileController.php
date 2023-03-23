@@ -11,50 +11,54 @@ use Illuminate\View\View;
 
 class ProfileController extends Controller
 {
-    /**
-     * Display the user's profile form.
-     */
-    public function edit(Request $request): View
-    {
-        return view('profile.edit', [
-            'user' => $request->user(),
-        ]);
-    }
+	/**
+	 * Display the user's profile form.
+	 */
+	public function edit(Request $request): View
+	{
+		$page_modul = 'User';
+		$heading_class = 'fal fa-User-lock';
+		$page_title = 'Profile';
+		$page_desc = 'Short description for this page';
+		$user = $request->user();
 
-    /**
-     * Update the user's profile information.
-     */
-    public function update(ProfileUpdateRequest $request): RedirectResponse
-    {
-        $request->user()->fill($request->validated());
+		return view('profile.edit', compact('page_modul', 'heading_class', 'page_title', 'page_desc', 'user'));
+	}
 
-        if ($request->user()->isDirty('email')) {
-            $request->user()->email_verified_at = null;
-        }
+	/**
+	 * Update the user's profile information.
+	 */
+	public function update(ProfileUpdateRequest $request): RedirectResponse
+	{
+		$request->user()->fill($request->validated());
 
-        $request->user()->save();
+		if ($request->user()->isDirty('email')) {
+			$request->user()->email_verified_at = null;
+		}
 
-        return Redirect::route('profile.edit')->with('status', 'profile-updated');
-    }
+		$request->user()->save();
 
-    /**
-     * Delete the user's account.
-     */
-    public function destroy(Request $request): RedirectResponse
-    {
-        $request->validateWithBag('userDeletion', [
-            'password' => ['required', 'current-password'],
-        ]);
+		return Redirect::route('profile.edit')->with('status', 'profile-updated');
+	}
 
-        $user = $request->user();
+	/**
+	 * Delete the user's account.
+	 */
+	public function destroy(Request $request): RedirectResponse
+	{
+		$request->validateWithBag('userDeletion', [
+			'password' => ['required', 'current-password'],
+		]);
 
-        Auth::logout();
+		$user = $request->user();
 
-        $user->delete();
+		Auth::logout();
 
-        $request->session()->invalidate();
-        $request->session()->regenerateToken();
+		$user->delete();
 
-        return Redirect::to('/');
-    }
+		$request->session()->invalidate();
+		$request->session()->regenerateToken();
+
+		return Redirect::to('/');
+	}
 }

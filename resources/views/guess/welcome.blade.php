@@ -69,7 +69,7 @@
 					<i class="fas fa-angle-right"></i>
 				</a>
 			</div>
-			<div id="catalogue" class="section">
+			<div id="catalogue" class="section bg-success bg-opacity-50">
 				<div class="container">
 					<div class="pt-lg-5 pb-lg-3 text-center">
 						<div class="display-6 fw-bolder mb-3 d-flex align-items-center justify-content-center">
@@ -102,7 +102,9 @@
 							</div>
 						@endforeach
 					</div>
-				</div><hr>
+				</div>
+			</div>
+			<div id="highlights" class="section">
 				<div class="container">
 					<div class="section-subtitle text-center">Product Highlights</div>
 					<div class="row gx-5 mb-5">

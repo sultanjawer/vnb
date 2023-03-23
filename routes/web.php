@@ -47,7 +47,7 @@ Route::middleware(['auth', 'verified'])->group(function () {
 	// 	return view('dashboard');
 	// })->name('dashboard');
 
-	Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+	// Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
 	// Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
 
 	Route::resource('categories', CategoryController::class);

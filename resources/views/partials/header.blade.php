@@ -63,7 +63,7 @@
 					<span data-i18n="drpdwn.fullscreen">Layar Penuh</span>
 					<i class="float-right text-muted fw-n">F11</i>
 				</a>
-				<a href="" class="dropdown-item">
+				<a href="{{route('profile.edit')}}" class="dropdown-item">
 					<span data-i18n="drpdwn.profile">Profile</span>
 				</a>
 				<div class="dropdown-divider m-0"></div>

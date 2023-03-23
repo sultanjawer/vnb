@@ -3,21 +3,25 @@
 	<head>
 		<meta charset="utf-8">
 		<title>
-			{{ env('APP_NAME')}} | {{ ($page_title ?? '3.0') }}
+			{{ env('APP_NAME')}} | {{ ($page_title ?? '') }}
 		</title>
 		<meta name="description" content="Page Title">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no, minimal-ui">
+
 		<!-- Call App Mode on ios devices -->
 		<meta name="apple-mobile-web-app-capable" content="yes" />
+
 		<!-- Remove Tap Highlight on Windows Phone IE -->
 		<meta name="msapplication-tap-highlight" content="no">
+
 		<!-- smartadmin base css -->
 		<link rel="stylesheet" href="{{ asset('css/app.css') }}" />
 		<link id="vendorsbundle" rel="stylesheet" media="screen, print" href="{{ asset('css/smartadmin/vendors.bundle.css') }}">
+		<link id="myskin" rel="stylesheet" media="screen, print" href="{{ asset('css/smartadmin/skins/skin-master.css') }}">
 		<link id="appbundle" rel="stylesheet" media="screen, print" href="{{ asset('css/smartadmin/app.bundle.css') }}">
 		<link id="mytheme" rel="stylesheet" media="screen, print" href="#">
-		<link id="myskin" rel="stylesheet" media="screen, print" href="{{ asset('css/smartadmin/skins/skin-master.css') }}">
+
 		<!-- Place favicon.ico in the root directory -->
 		<link href="{{ asset('css/fontawesome.min.css') }}" rel="stylesheet">
 		<link href="{{ asset('img/favicon.png') }}" rel="icon" />

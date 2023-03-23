@@ -10,15 +10,7 @@
 	<!-- BEGIN PRIMARY NAVIGATION -->
 	<nav id="js-primary-nav" class="primary-nav" role="navigation">
 		<ul id="js-nav-menu" class="nav-menu">
-			{{-- landing / beranda --}}
-			<li class="c-sidebar-nav-item {{ request()->is('dashboard') ? 'active open' : '' }}">
-				<a href="{{ route('dashboard') }}" class="c-sidebar-nav-link"
-					data-filter-tags="">
-					<i class="c-sidebar-nav-icon fal fa-home-alt"></i>
-					<span class="nav-link-text"
-						data-i18n="nav.landing_page">Dashboard</span>
-				</a>
-			</li>
+
 			<li class="c-sidebar-nav-item {{ request()->is('categories') ? 'active open' : '' }}">
 				<a href="{{ route('categories.index') }}" class="c-sidebar-nav-link"
 					data-filter-tags="">
@@ -72,6 +64,14 @@
 						</a>
 					</li>
 				</ul>
+			</li>
+			<li class="c-sidebar-nav-item {{ request()->is('profile') ? 'active open' : '' }}">
+				<a href="{{ route('profile.edit') }}" class="c-sidebar-nav-link"
+					data-filter-tags="">
+					<i class="c-sidebar-nav-icon fal fa-list"></i>
+					<span class="nav-link-text"
+						data-i18n="nav.profile">Profile</span>
+				</a>
 			</li>
 			{{-- logout --}}
 			<li class="c-sidebar-nav-item">
