@@ -157,7 +157,7 @@
 											<div class="news-content w-100 p-4 d-flex align-items-center">
 												<div>
 													<div class="news-label fw-bold">{{$product->product_name}}</div>
-													<div class="">Ukuran: 1220 x 2440 x 12 mm</div>
+													<div class="">{{($product->product_specs)}}</div>
 												</div>
 											</div>
 											<div class="news-media w-50 h-100 mb-0">
@@ -186,11 +186,11 @@
 										</div>
 									</div>
 									<div class="news-content px-4 py-4 bg-white flex-grow-1">
-										<div class="news-label">
+										{{-- <div class="news-label">
 											<span class="bg-teal-200 text-teal-800">
-												{{$product->tags}}
+												{{$product->product_category}}
 											</span>
-										</div>
+										</div> --}}
 										<div class="news-title">
 											{{$product->product_name}}
 										</div>
