@@ -12,10 +12,10 @@
 		<link rel="stylesheet" href="{{ asset('guess/css/app.min.css') }}">
 		<link rel="stylesheet" href="{{ asset('guess/css/vendor.min.css') }}">
 
-		<link rel="stylesheet" media="screen, print" href="{{ asset('css/font/fa-light.css') }}">
-		<link rel="stylesheet" media="screen, print" href="{{ asset('css/font/fa-regular.css') }}">
-		<link rel="stylesheet" media="screen, print" href="{{ asset('css/font/fa-solid.css') }}">
-		<link rel="stylesheet" media="screen, print" href="{{ asset('css/font/fa-brands.css') }}">
+		<link rel="stylesheet" media="screen, print" href="{{ asset('css/fonts/fa-light.css') }}">
+		<link rel="stylesheet" media="screen, print" href="{{ asset('css/fonts/fa-regular.css') }}">
+		<link rel="stylesheet" media="screen, print" href="{{ asset('css/fonts/fa-solid.css') }}">
+		<link rel="stylesheet" media="screen, print" href="{{ asset('css/fonts/fa-brands.css') }}">
 		<style>
 			.row-eq-height {
   display: flex;
